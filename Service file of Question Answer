@@ -1,0 +1,40 @@
+package com.wheeboxproject.service;
+
+import java.util.List;
+
+
+import javax.transaction.Transactional;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.wheeboxproject.dao.WetUserDao;
+
+@Service
+@Transactional
+public class WetUserService {
+
+	@Autowired
+	private WetUserDao wud;
+	
+	public List data(int testno)
+	{
+		System.out.println("service called");
+		return this.wud.fetchData(testno);
+	}
+	
+
+	public List getdata(String que_id)
+	{
+		System.out.println("question bank ");
+		return this.wud.getData(que_id);
+	}
+	
+	public List maindata(int test_id)
+	{
+		System.out.println("main data is cming");
+		return this.wud.getData(test_id);
+	}
+	
+	
+}
