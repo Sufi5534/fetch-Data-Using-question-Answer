@@ -1,0 +1,107 @@
+package com.wheeboxproject.dao;
+
+import java.util.List;
+
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+import org.hibernate.Transaction;
+import org.hibernate.query.Query;
+import org.json.JSONObject;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.orm.hibernate5.HibernateTemplate;
+import org.springframework.stereotype.Repository;
+import org.springframework.transaction.annotation.Transactional;
+
+import com.wheeboxproject.model.te_ques_bank;
+import com.wheeboxproject.model.te_section_que;
+import com.wheeboxproject.model.wet_user_response;
+
+@Repository
+public class WetUserDao
+{
+
+	@Autowired
+	private HibernateTemplate hibernateTemplate;
+	
+	@Autowired
+	SessionFactory sF;
+	
+	@Transactional
+	public List fetchData(int testNo) {
+		Session session=sF.openSession();
+        System.out.println("testing dao");
+		List<te_section_que> list = null;
+		Transaction transaction= null;
+		
+		try {
+			String SQL_QUERY=" from te_section_que as o where o.test_no=?0";
+			transaction = session.beginTransaction();
+			Query query=session.createQuery(SQL_QUERY);
+		    query.setParameter(0, testNo);
+			
+			list = (List<te_section_que>) query.list();
+			
+		}catch(Exception e){
+			System.out.println(e);
+			return null;
+		}
+		
+		if(!list.isEmpty())
+		{
+			
+			return list;
+		}
+		
+	return null;
+}
+	@SuppressWarnings("unchecked")
+	public List getData(String que_id)
+	{
+		Session session=sF.openSession();
+        System.out.println("testing dao");
+		List<te_ques_bank> data = null;
+		@SuppressWarnings("unused")
+		Transaction transaction= null;
+		System.out.println("t start");
+		try {
+			String SQL_QUERY=" from te_ques_bank  where sno in("+que_id+")";
+			transaction = session.beginTransaction();
+//			Query q=session.createQuery("SELECT * FROM te_ques_comp  WHERE sno IN ('3522843','3522844')");
+//			Query q = session.createSQLQuery("SELECT * FROM te_ques_comp  WHERE sno IN ('3522843','3522844')");
+//			Query q = session.createSQLQuery(SQL_QUERY);
+			Query q=session.createQuery(SQL_QUERY);
+		    data = (List<te_ques_bank>) q.list();
+		   
+		}catch(Exception e)
+		{
+			System.out.println(e);
+		}
+		return data;
+	}
+	
+	
+	public List getData(int test_id)
+	{
+		Session session=sF.openSession();
+        System.out.println("testing dao");
+		List<wet_user_response> userdata = null;
+		Transaction transaction= null;
+		
+		System.out.println("user response data");
+		try {
+			String SQL_QUERY=" from wet_user_response as o where o.test_id=?0";
+			transaction = session.beginTransaction();
+	
+			Query que=session.createQuery(SQL_QUERY);
+		    que.setParameter(0, test_id);
+		    
+		   userdata = (List<wet_user_response>) que.list();
+
+		}catch(Exception e){
+			System.out.println(e);
+			return null;
+		
+		}
+		return userdata;	
+	}
+	}
