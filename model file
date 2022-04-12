@@ -1,0 +1,548 @@
+package com.wheeboxproject.model;
+
+import java.util.Date;
+
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+@Entity
+@Table(name="te_ques_bank")
+public class te_ques_bank {
+
+	@Id
+	private int sno;
+	private int secid;
+	private int QFLAG;
+	private String qtext;
+	private String op1;
+	private String op1_img;
+	private String op1_res;
+	private String op1_exp;
+	private String op2;
+	private String op2_img;
+	private String op2_res;
+	private String op2_exp;
+	private String op3;
+	private String op3_img;
+	private String op3_res;
+	private String op3_exp;
+	private String op4;
+	private String op4_img;
+	private String op4_res;
+	private String op4_exp;
+	private String op5;
+	private String op5_img;
+	private String op5_res;
+	private String op5_exp;
+	private String op6;
+	private String op6_img;
+	private String op6_res;
+	private String op6_exp;
+	private String ans1;
+	private String compre;
+	private String img_path;
+	private String hint;
+	private String level;
+	private float mark;
+	private float nmark;
+	private String stream;
+	private String topic;
+	private String subtopic;
+	private String section;
+	private int write_atm;
+	private int wrong_atm;
+	private int blank_atm;
+	private String type;
+	private String status;
+	private String code;
+	private String remark;
+	private String que_id;
+	private int op1_min;
+	private int op1_max;
+	private int op2_min;
+	private int op2_max;
+	private int op3_min;
+	private int op3_max;
+	private int op4_min;
+	private int op4_max;
+	private int op5_min;
+	private int op5_max;
+	private int op6_min;
+	private int op6_max;
+	private String wac_type;
+	private String wat_type;
+	private String question_type;
+	private String op7;
+	private String op7_img;
+	private String op7_res;
+	private String op7_exp;
+	private int op7_min;
+	private int op7_max;
+	private String levelType;
+	private int createdBy;
+	private Date creationDate;
+	private int lastUpdatedBy;
+	private Date lastUpdatedOn;
+	public int getSno() {
+		return sno;
+	}
+	public void setSno(int sno) {
+		this.sno = sno;
+	}
+	public int getSecid() {
+		return secid;
+	}
+	public void setSecid(int secid) {
+		this.secid = secid;
+	}
+	public int getQFLAG() {
+		return QFLAG;
+	}
+	public void setQFLAG(int qFLAG) {
+		QFLAG = qFLAG;
+	}
+	public String getQtext() {
+		return qtext;
+	}
+	public void setQtext(String qtext) {
+		this.qtext = qtext;
+	}
+	public String getOp1() {
+		return op1;
+	}
+	public void setOp1(String op1) {
+		this.op1 = op1;
+	}
+	public String getOp1_img() {
+		return op1_img;
+	}
+	public void setOp1_img(String op1_img) {
+		this.op1_img = op1_img;
+	}
+	public String getOp1_res() {
+		return op1_res;
+	}
+	public void setOp1_res(String op1_res) {
+		this.op1_res = op1_res;
+	}
+	public String getOp1_exp() {
+		return op1_exp;
+	}
+	public void setOp1_exp(String op1_exp) {
+		this.op1_exp = op1_exp;
+	}
+	public String getOp2() {
+		return op2;
+	}
+	public void setOp2(String op2) {
+		this.op2 = op2;
+	}
+	public String getOp2_img() {
+		return op2_img;
+	}
+	public void setOp2_img(String op2_img) {
+		this.op2_img = op2_img;
+	}
+	public String getOp2_res() {
+		return op2_res;
+	}
+	public void setOp2_res(String op2_res) {
+		this.op2_res = op2_res;
+	}
+	public String getOp2_exp() {
+		return op2_exp;
+	}
+	public void setOp2_exp(String op2_exp) {
+		this.op2_exp = op2_exp;
+	}
+	public String getOp3() {
+		return op3;
+	}
+	public void setOp3(String op3) {
+		this.op3 = op3;
+	}
+	public String getOp3_img() {
+		return op3_img;
+	}
+	public void setOp3_img(String op3_img) {
+		this.op3_img = op3_img;
+	}
+	public String getOp3_res() {
+		return op3_res;
+	}
+	public void setOp3_res(String op3_res) {
+		this.op3_res = op3_res;
+	}
+	public String getOp3_exp() {
+		return op3_exp;
+	}
+	public void setOp3_exp(String op3_exp) {
+		this.op3_exp = op3_exp;
+	}
+	public String getOp4() {
+		return op4;
+	}
+	public void setOp4(String op4) {
+		this.op4 = op4;
+	}
+	public String getOp4_img() {
+		return op4_img;
+	}
+	public void setOp4_img(String op4_img) {
+		this.op4_img = op4_img;
+	}
+	public String getOp4_res() {
+		return op4_res;
+	}
+	public void setOp4_res(String op4_res) {
+		this.op4_res = op4_res;
+	}
+	public String getOp4_exp() {
+		return op4_exp;
+	}
+	public void setOp4_exp(String op4_exp) {
+		this.op4_exp = op4_exp;
+	}
+	public String getOp5() {
+		return op5;
+	}
+	public void setOp5(String op5) {
+		this.op5 = op5;
+	}
+	public String getOp5_img() {
+		return op5_img;
+	}
+	public void setOp5_img(String op5_img) {
+		this.op5_img = op5_img;
+	}
+	public String getOp5_res() {
+		return op5_res;
+	}
+	public void setOp5_res(String op5_res) {
+		this.op5_res = op5_res;
+	}
+	public String getOp5_exp() {
+		return op5_exp;
+	}
+	public void setOp5_exp(String op5_exp) {
+		this.op5_exp = op5_exp;
+	}
+	public String getOp6() {
+		return op6;
+	}
+	public void setOp6(String op6) {
+		this.op6 = op6;
+	}
+	public String getOp6_img() {
+		return op6_img;
+	}
+	public void setOp6_img(String op6_img) {
+		this.op6_img = op6_img;
+	}
+	public String getOp6_res() {
+		return op6_res;
+	}
+	public void setOp6_res(String op6_res) {
+		this.op6_res = op6_res;
+	}
+	public String getOp6_exp() {
+		return op6_exp;
+	}
+	public void setOp6_exp(String op6_exp) {
+		this.op6_exp = op6_exp;
+	}
+	public String getAns1() {
+		return ans1;
+	}
+	public void setAns1(String ans1) {
+		this.ans1 = ans1;
+	}
+	public String getCompre() {
+		return compre;
+	}
+	public void setCompre(String compre) {
+		this.compre = compre;
+	}
+	public String getImg_path() {
+		return img_path;
+	}
+	public void setImg_path(String img_path) {
+		this.img_path = img_path;
+	}
+	public String getHint() {
+		return hint;
+	}
+	public void setHint(String hint) {
+		this.hint = hint;
+	}
+	public String getLevel() {
+		return level;
+	}
+	public void setLevel(String level) {
+		this.level = level;
+	}
+	public float getMark() {
+		return mark;
+	}
+	public void setMark(float mark) {
+		this.mark = mark;
+	}
+	public float getNmark() {
+		return nmark;
+	}
+	public void setNmark(float nmark) {
+		this.nmark = nmark;
+	}
+	public String getStream() {
+		return stream;
+	}
+	public void setStream(String stream) {
+		this.stream = stream;
+	}
+	public String getTopic() {
+		return topic;
+	}
+	public void setTopic(String topic) {
+		this.topic = topic;
+	}
+	public String getSubtopic() {
+		return subtopic;
+	}
+	public void setSubtopic(String subtopic) {
+		this.subtopic = subtopic;
+	}
+	public String getSection() {
+		return section;
+	}
+	public void setSection(String section) {
+		this.section = section;
+	}
+	public int getWrite_atm() {
+		return write_atm;
+	}
+	public void setWrite_atm(int write_atm) {
+		this.write_atm = write_atm;
+	}
+	public int getWrong_atm() {
+		return wrong_atm;
+	}
+	public void setWrong_atm(int wrong_atm) {
+		this.wrong_atm = wrong_atm;
+	}
+	public int getBlank_atm() {
+		return blank_atm;
+	}
+	public void setBlank_atm(int blank_atm) {
+		this.blank_atm = blank_atm;
+	}
+	public String getType() {
+		return type;
+	}
+	public void setType(String type) {
+		this.type = type;
+	}
+	public String getStatus() {
+		return status;
+	}
+	public void setStatus(String status) {
+		this.status = status;
+	}
+	public String getCode() {
+		return code;
+	}
+	public void setCode(String code) {
+		this.code = code;
+	}
+	public String getRemark() {
+		return remark;
+	}
+	public void setRemark(String remark) {
+		this.remark = remark;
+	}
+	public String getQue_id() {
+		return que_id;
+	}
+	public void setQue_id(String que_id) {
+		this.que_id = que_id;
+	}
+	public int getOp1_min() {
+		return op1_min;
+	}
+	public void setOp1_min(int op1_min) {
+		this.op1_min = op1_min;
+	}
+	public int getOp1_max() {
+		return op1_max;
+	}
+	public void setOp1_max(int op1_max) {
+		this.op1_max = op1_max;
+	}
+	public int getOp2_min() {
+		return op2_min;
+	}
+	public void setOp2_min(int op2_min) {
+		this.op2_min = op2_min;
+	}
+	public int getOp2_max() {
+		return op2_max;
+	}
+	public void setOp2_max(int op2_max) {
+		this.op2_max = op2_max;
+	}
+	public int getOp3_min() {
+		return op3_min;
+	}
+	public void setOp3_min(int op3_min) {
+		this.op3_min = op3_min;
+	}
+	public int getOp3_max() {
+		return op3_max;
+	}
+	public void setOp3_max(int op3_max) {
+		this.op3_max = op3_max;
+	}
+	public int getOp4_min() {
+		return op4_min;
+	}
+	public void setOp4_min(int op4_min) {
+		this.op4_min = op4_min;
+	}
+	public int getOp4_max() {
+		return op4_max;
+	}
+	public void setOp4_max(int op4_max) {
+		this.op4_max = op4_max;
+	}
+	public int getOp5_min() {
+		return op5_min;
+	}
+	public void setOp5_min(int op5_min) {
+		this.op5_min = op5_min;
+	}
+	public int getOp5_max() {
+		return op5_max;
+	}
+	public void setOp5_max(int op5_max) {
+		this.op5_max = op5_max;
+	}
+	public int getOp6_min() {
+		return op6_min;
+	}
+	public void setOp6_min(int op6_min) {
+		this.op6_min = op6_min;
+	}
+	public int getOp6_max() {
+		return op6_max;
+	}
+	public void setOp6_max(int op6_max) {
+		this.op6_max = op6_max;
+	}
+	public String getWac_type() {
+		return wac_type;
+	}
+	public void setWac_type(String wac_type) {
+		this.wac_type = wac_type;
+	}
+	public String getWat_type() {
+		return wat_type;
+	}
+	public void setWat_type(String wat_type) {
+		this.wat_type = wat_type;
+	}
+	public String getQuestion_type() {
+		return question_type;
+	}
+	public void setQuestion_type(String question_type) {
+		this.question_type = question_type;
+	}
+	public String getOp7() {
+		return op7;
+	}
+	public void setOp7(String op7) {
+		this.op7 = op7;
+	}
+	public String getOp7_img() {
+		return op7_img;
+	}
+	public void setOp7_img(String op7_img) {
+		this.op7_img = op7_img;
+	}
+	public String getOp7_res() {
+		return op7_res;
+	}
+	public void setOp7_res(String op7_res) {
+		this.op7_res = op7_res;
+	}
+	public String getOp7_exp() {
+		return op7_exp;
+	}
+	public void setOp7_exp(String op7_exp) {
+		this.op7_exp = op7_exp;
+	}
+	public int getOp7_min() {
+		return op7_min;
+	}
+	public void setOp7_min(int op7_min) {
+		this.op7_min = op7_min;
+	}
+	public int getOp7_max() {
+		return op7_max;
+	}
+	public void setOp7_max(int op7_max) {
+		this.op7_max = op7_max;
+	}
+	public String getLevelType() {
+		return levelType;
+	}
+	public void setLevelType(String levelType) {
+		this.levelType = levelType;
+	}
+	public int getCreatedBy() {
+		return createdBy;
+	}
+	public void setCreatedBy(int createdBy) {
+		this.createdBy = createdBy;
+	}
+	public Date getCreationDate() {
+		return creationDate;
+	}
+	public void setCreationDate(Date creationDate) {
+		this.creationDate = creationDate;
+	}
+	public int getLastUpdatedBy() {
+		return lastUpdatedBy;
+	}
+	public void setLastUpdatedBy(int lastUpdatedBy) {
+		this.lastUpdatedBy = lastUpdatedBy;
+	}
+	public Date getLastUpdatedOn() {
+		return lastUpdatedOn;
+	}
+	public void setLastUpdatedOn(Date lastUpdatedOn) {
+		this.lastUpdatedOn = lastUpdatedOn;
+	}
+	@Override
+	public String toString() {
+		return "TeQuestionBank [sno=" + sno + ", secid=" + secid + ", QFLAG=" + QFLAG + ", qtext=" + qtext + ", op1="
+				+ op1 + ", op1_img=" + op1_img + ", op1_res=" + op1_res + ", op1_exp=" + op1_exp + ", op2=" + op2
+				+ ", op2_img=" + op2_img + ", op2_res=" + op2_res + ", op2_exp=" + op2_exp + ", op3=" + op3
+				+ ", op3_img=" + op3_img + ", op3_res=" + op3_res + ", op3_exp=" + op3_exp + ", op4=" + op4
+				+ ", op4_img=" + op4_img + ", op4_res=" + op4_res + ", op4_exp=" + op4_exp + ", op5=" + op5
+				+ ", op5_img=" + op5_img + ", op5_res=" + op5_res + ", op5_exp=" + op5_exp + ", op6=" + op6
+				+ ", op6_img=" + op6_img + ", op6_res=" + op6_res + ", op6_exp=" + op6_exp + ", ans1=" + ans1
+				+ ", compre=" + compre + ", img_path=" + img_path + ", hint=" + hint + ", level=" + level + ", mark="
+				+ mark + ", nmark=" + nmark + ", stream=" + stream + ", topic=" + topic + ", subtopic=" + subtopic
+				+ ", section=" + section + ", write_atm=" + write_atm + ", wrong_atm=" + wrong_atm + ", blank_atm="
+				+ blank_atm + ", type=" + type + ", status=" + status + ", code=" + code + ", remark=" + remark
+				+ ", que_id=" + que_id + ", op1_min=" + op1_min + ", op1_max=" + op1_max + ", op2_min=" + op2_min
+				+ ", op2_max=" + op2_max + ", op3_min=" + op3_min + ", op3_max=" + op3_max + ", op4_min=" + op4_min
+				+ ", op4_max=" + op4_max + ", op5_min=" + op5_min + ", op5_max=" + op5_max + ", op6_min=" + op6_min
+				+ ", op6_max=" + op6_max + ", wac_type=" + wac_type + ", wat_type=" + wat_type + ", question_type="
+				+ question_type + ", op7=" + op7 + ", op7_img=" + op7_img + ", op7_res=" + op7_res + ", op7_exp="
+				+ op7_exp + ", op7_min=" + op7_min + ", op7_max=" + op7_max + ", levelType=" + levelType
+				+ ", createdBy=" + createdBy + ", creationDate=" + creationDate + ", lastUpdatedBy=" + lastUpdatedBy
+				+ ", lastUpdatedOn=" + lastUpdatedOn + "]";
+	}
+	
+}
