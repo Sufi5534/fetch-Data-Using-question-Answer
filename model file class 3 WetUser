@@ -1,0 +1,324 @@
+package com.wheeboxproject.model;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+
+@Entity
+public class wet_user_response {
+
+	@Id
+	@GeneratedValue(strategy = GenerationType.AUTO)
+	private int sno;
+	
+	private String test_pattern;
+	
+	private String tlevel;
+	
+
+	private String result_view;
+	private String bexam_name;
+	
+	
+	private String bcomp_code;
+	
+	
+	private String test_domain1;
+	
+	private String RQNO1;
+	
+	private String RANS1;
+	private String RSEC1;
+	
+	private String RMAK1;
+	private String qtext1;
+	
+	private String SEL_SECTION1;
+	private String email;
+	
+	private String name1;
+	
+	private String exam_name;
+	
+	private String TestStartTime;
+	
+	private String RQNO;
+	
+	
+	private String RSEC;
+	
+	private String RMAK;
+	
+
+	private String RANS;
+	
+	
+	private String UANS;
+	
+	
+	private int wheeboxID;
+	
+	
+	private String perQuestionTimer;
+	
+	
+	private int assign_by;
+	
+	
+	private int test_id;
+	
+	private long cuk_id;
+	
+	private int key_sno;
+	
+	private String questionsFlagged;
+
+	public int getSno() {
+		return sno;
+	}
+
+	public void setSno(int sno) {
+		this.sno = sno;
+	}
+
+	public String getTest_pattern() {
+		return test_pattern;
+	}
+
+	public void setTest_pattern(String test_pattern) {
+		this.test_pattern = test_pattern;
+	}
+
+	public String getTlevel() {
+		return tlevel;
+	}
+
+	public void setTlevel(String tlevel) {
+		this.tlevel = tlevel;
+	}
+
+	public String getResult_view() {
+		return result_view;
+	}
+
+	public void setResult_view(String result_view) {
+		this.result_view = result_view;
+	}
+
+	public String getBexam_name() {
+		return bexam_name;
+	}
+
+	public void setBexam_name(String bexam_name) {
+		this.bexam_name = bexam_name;
+	}
+
+	public String getBcomp_code() {
+		return bcomp_code;
+	}
+
+	public void setBcomp_code(String bcomp_code) {
+		this.bcomp_code = bcomp_code;
+	}
+
+	public String getTest_domain1() {
+		return test_domain1;
+	}
+
+	public void setTest_domain1(String test_domain1) {
+		this.test_domain1 = test_domain1;
+	}
+
+	public String getRQNO1() {
+		return RQNO1;
+	}
+
+	public void setRQNO1(String rQNO1) {
+		RQNO1 = rQNO1;
+	}
+
+	public String getRANS1() {
+		return RANS1;
+	}
+
+	public void setRANS1(String rANS1) {
+		RANS1 = rANS1;
+	}
+
+	public String getRSEC1() {
+		return RSEC1;
+	}
+
+	public void setRSEC1(String rSEC1) {
+		RSEC1 = rSEC1;
+	}
+
+	public String getRMAK1() {
+		return RMAK1;
+	}
+
+	public void setRMAK1(String rMAK1) {
+		RMAK1 = rMAK1;
+	}
+
+	public String getQtext1() {
+		return qtext1;
+	}
+
+	public void setQtext1(String qtext1) {
+		this.qtext1 = qtext1;
+	}
+
+	public String getSEL_SELECTION1() {
+		return SEL_SECTION1;
+	}
+
+	public void setSEL_SELECTION1(String sEL_SELECTION1) {
+		SEL_SECTION1 = sEL_SELECTION1;
+	}
+
+	public String getEmail() {
+		return email;
+	}
+
+	public void setEmail(String email) {
+		this.email = email;
+	}
+
+	public String getName1() {
+		return name1;
+	}
+
+	public void setName1(String name1) {
+		this.name1 = name1;
+	}
+
+	public String getExam_name() {
+		return exam_name;
+	}
+
+	public void setExam_name(String exam_name) {
+		this.exam_name = exam_name;
+	}
+
+	public String getTestStartTime() {
+		return TestStartTime;
+	}
+
+	public void setTestStartTime(String testStartTime) {
+		TestStartTime = testStartTime;
+	}
+
+	public String getRQNO() {
+		return RQNO;
+	}
+
+	public void setRQNO(String rQNO) {
+		RQNO = rQNO;
+	}
+
+	public String getRSEC() {
+		return RSEC;
+	}
+
+	public void setRSEC(String rSEC) {
+		RSEC = rSEC;
+	}
+
+	public String getRMAK() {
+		return RMAK;
+	}
+
+	public void setRMAK(String rMAK) {
+		RMAK = rMAK;
+	}
+
+	public String getRANS() {
+		return RANS;
+	}
+
+	public void setRANS(String rANS) {
+		RANS = rANS;
+	}
+
+	public String getUANS() {
+		return UANS;
+	}
+
+	public void setUANS(String uANS) {
+		UANS = uANS;
+	}
+
+	public int getWheeboxID() {
+		return wheeboxID;
+	}
+
+	public void setWheeboxID(int wheeboxID) {
+		this.wheeboxID = wheeboxID;
+	}
+
+	public String getPerQustionTimer() {
+		return perQuestionTimer;
+	}
+
+	public void setPerQustionTimer(String perQustionTimer) {
+		this.perQuestionTimer = perQustionTimer;
+	}
+
+	public int getAssign_by() {
+		return assign_by;
+	}
+
+	public void setAssign_by(int assign_by) {
+		this.assign_by = assign_by;
+	}
+
+	public int getTest_id() {
+		return test_id;
+	}
+
+	public void setTest_id(int test_id) {
+		this.test_id = test_id;
+	}
+
+	public long getCuk_id() {
+		return cuk_id;
+	}
+
+	public void setCuk_id(int cuk_id) {
+		this.cuk_id = cuk_id;
+	}
+
+	public int getKey_sno() {
+		return key_sno;
+	}
+
+	public void setKey_sno(int key_sno) {
+		this.key_sno = key_sno;
+	}
+
+	public String getQuestionsFlagged() {
+		return questionsFlagged;
+	}
+
+	@Override
+	public String toString() {
+		return "wet_user_response [sno=" + sno + ", test_pattern=" + test_pattern + ", tlevel=" + tlevel
+				+ ", result_view=" + result_view + ", bexam_name=" + bexam_name + ", bcomp_code=" + bcomp_code
+				+ ", test_domain1=" + test_domain1 + ", RQNO1=" + RQNO1 + ", RANS1=" + RANS1 + ", RSEC1=" + RSEC1
+				+ ", RMAK1=" + RMAK1 + ", qtext1=" + qtext1 + ", SEL_SECTION1=" + SEL_SECTION1 + ", email=" + email
+				+ ", name1=" + name1 + ", exam_name=" + exam_name + ", TestStartTime=" + TestStartTime + ", RQNO="
+				+ RQNO + ", RSEC=" + RSEC + ", RMAK=" + RMAK + ", RANS=" + RANS + ", UANS=" + UANS + ", wheeboxID="
+				+ wheeboxID + ", perQuestionTimer=" + perQuestionTimer + ", assign_by=" + assign_by + ", test_id="
+				+ test_id + ", cuk_id=" + cuk_id + ", key_sno=" + key_sno + ", questionsFlagged=" + questionsFlagged
+				+ "]";
+	}
+
+	public void setQuestionsFlagged(String questionsFlagged) {
+		this.questionsFlagged = questionsFlagged;
+	}
+	
+	
+}
