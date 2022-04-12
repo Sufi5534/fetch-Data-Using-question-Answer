@@ -1,0 +1,380 @@
+package com.wheeboxproject.model;
+
+import java.util.Date;
+
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Table;
+@Entity
+//@Table(name="te_section_que")
+public class te_section_que {
+
+	@Id
+	 private int sno;
+		private String section_name;
+		private String stream;
+		private String topic;
+		private String subtopic;
+		private String Domain_Name;
+		private String compCode;
+		private String remark;
+		private int test_no;
+		private String bank_type;
+		private String test_name;
+		private String set_no;
+		private int total_time;
+		private String farea;
+		private String totalques;
+		private String totalrandom;
+		private String ques;
+		private String test_pattern;
+		private String level;
+		private String sec_wise_random;
+		private String level1_totalQues;
+		private String level1_totalPool;
+		private String level1_QuesId;
+		private String level2_totalQues;
+		private String level2_totalPool;
+		private String level2_QuesId;
+		private String level3_totalQues;
+		private String level3_totalPool;
+		private String level3_QuesId;
+		private String level4_totalQues;
+		private String level4_totalPool;
+		private String level4_QuesId;
+		private String level5_totalQues;
+		private String level5_totalPool;
+		private String level5_QuesId;
+		private int compre_group;
+		private float passing_percentage;
+		private String high_range;
+		private String mid_range;
+		private String sec_instruction;
+		private String display_sec_name;
+		private String sec_change_warning;
+		private int MaxAllowedtoAttempt;
+		private String ignore_ques_id;
+		private int createdBy;
+		private Date creationDate;
+		private int lastUpdatedBy;
+		private Date lastUpdatedOn;
+		private String basket_json;
+		public int getSno() {
+			return sno;
+		}
+		public void setSno(int sno) {
+			this.sno = sno;
+		}
+		public String getSection_name() {
+			return section_name;
+		}
+		public void setSection_name(String section_name) {
+			this.section_name = section_name;
+		}
+		public String getStream() {
+			return stream;
+		}
+		public void setStream(String stream) {
+			this.stream = stream;
+		}
+		public String getTopic() {
+			return topic;
+		}
+		public void setTopic(String topic) {
+			this.topic = topic;
+		}
+		public String getSubtopic() {
+			return subtopic;
+		}
+		public void setSubtopic(String subtopic) {
+			this.subtopic = subtopic;
+		}
+		public String getDomain_Name() {
+			return Domain_Name;
+		}
+		public void setDomain_Name(String domain_Name) {
+			Domain_Name = domain_Name;
+		}
+		public String getCompCode() {
+			return compCode;
+		}
+		public void setCompCode(String compCode) {
+			this.compCode = compCode;
+		}
+		public String getRemark() {
+			return remark;
+		}
+		public void setRemark(String remark) {
+			this.remark = remark;
+		}
+		public int getTest_no() {
+			return test_no;
+		}
+		public void setTest_no(int test_no) {
+			this.test_no = test_no;
+		}
+		public String getBank_type() {
+			return bank_type;
+		}
+		public void setBank_type(String bank_type) {
+			this.bank_type = bank_type;
+		}
+		public String getTest_name() {
+			return test_name;
+		}
+		public void setTest_name(String test_name) {
+			this.test_name = test_name;
+		}
+		public String getSet_no() {
+			return set_no;
+		}
+		public void setSet_no(String set_no) {
+			this.set_no = set_no;
+		}
+		public int getTotal_time() {
+			return total_time;
+		}
+		public void setTotal_time(int total_time) {
+			this.total_time = total_time;
+		}
+		public String getFarea() {
+			return farea;
+		}
+		public void setFarea(String farea) {
+			this.farea = farea;
+		}
+		public String getTotalques() {
+			return totalques;
+		}
+		public void setTotalques(String totalques) {
+			this.totalques = totalques;
+		}
+		public String getTotalrandom() {
+			return totalrandom;
+		}
+		public void setTotalrandom(String totalrandom) {
+			this.totalrandom = totalrandom;
+		}
+		public String getQues() {
+			return ques;
+		}
+		public void setQues(String ques) {
+			this.ques = ques;
+		}
+		public String getTest_pattern() {
+			return test_pattern;
+		}
+		public void setTest_pattern(String test_pattern) {
+			this.test_pattern = test_pattern;
+		}
+		public String getLevel() {
+			return level;
+		}
+		public void setLevel(String level) {
+			this.level = level;
+		}
+		public String getSec_wise_random() {
+			return sec_wise_random;
+		}
+		public void setSec_wise_random(String sec_wise_random) {
+			this.sec_wise_random = sec_wise_random;
+		}
+		public String getLevel1_totalQues() {
+			return level1_totalQues;
+		}
+		public void setLevel1_totalQues(String level1_totalQues) {
+			this.level1_totalQues = level1_totalQues;
+		}
+		public String getLevel1_totalPool() {
+			return level1_totalPool;
+		}
+		public void setLevel1_totalPool(String level1_totalPool) {
+			this.level1_totalPool = level1_totalPool;
+		}
+		public String getLevel1_QuesId() {
+			return level1_QuesId;
+		}
+		public void setLevel1_QuesId(String level1_QuesId) {
+			this.level1_QuesId = level1_QuesId;
+		}
+		public String getLevel2_totalQues() {
+			return level2_totalQues;
+		}
+		public void setLevel2_totalQues(String level2_totalQues) {
+			this.level2_totalQues = level2_totalQues;
+		}
+		public String getLevel2_totalPool() {
+			return level2_totalPool;
+		}
+		public void setLevel2_totalPool(String level2_totalPool) {
+			this.level2_totalPool = level2_totalPool;
+		}
+		public String getLevel2_QuesId() {
+			return level2_QuesId;
+		}
+		public void setLevel2_QuesId(String level2_QuesId) {
+			this.level2_QuesId = level2_QuesId;
+		}
+		public String getLevel3_totalQues() {
+			return level3_totalQues;
+		}
+		public void setLevel3_totalQues(String level3_totalQues) {
+			this.level3_totalQues = level3_totalQues;
+		}
+		public String getLevel3_totalPool() {
+			return level3_totalPool;
+		}
+		public void setLevel3_totalPool(String level3_totalPool) {
+			this.level3_totalPool = level3_totalPool;
+		}
+		public String getLevel3_QuesId() {
+			return level3_QuesId;
+		}
+		public void setLevel3_QuesId(String level3_QuesId) {
+			this.level3_QuesId = level3_QuesId;
+		}
+		public String getLevel4_totalQues() {
+			return level4_totalQues;
+		}
+		public void setLevel4_totalQues(String level4_totalQues) {
+			this.level4_totalQues = level4_totalQues;
+		}
+		public String getLevel4_totalPool() {
+			return level4_totalPool;
+		}
+		public void setLevel4_totalPool(String level4_totalPool) {
+			this.level4_totalPool = level4_totalPool;
+		}
+		public String getLevel4_QuesId() {
+			return level4_QuesId;
+		}
+		public void setLevel4_QuesId(String level4_QuesId) {
+			this.level4_QuesId = level4_QuesId;
+		}
+		public String getLevel5_totalQues() {
+			return level5_totalQues;
+		}
+		public void setLevel5_totalQues(String level5_totalQues) {
+			this.level5_totalQues = level5_totalQues;
+		}
+		public String getLevel5_totalPool() {
+			return level5_totalPool;
+		}
+		public void setLevel5_totalPool(String level5_totalPool) {
+			this.level5_totalPool = level5_totalPool;
+		}
+		public String getLevel5_QuesId() {
+			return level5_QuesId;
+		}
+		public void setLevel5_QuesId(String level5_QuesId) {
+			this.level5_QuesId = level5_QuesId;
+		}
+		public int getCompre_group() {
+			return compre_group;
+		}
+		public void setCompre_group(int compre_group) {
+			this.compre_group = compre_group;
+		}
+		public float getPassing_percentage() {
+			return passing_percentage;
+		}
+		public void setPassing_percentage(float passing_percentage) {
+			this.passing_percentage = passing_percentage;
+		}
+		public String getHigh_range() {
+			return high_range;
+		}
+		public void setHigh_range(String high_range) {
+			this.high_range = high_range;
+		}
+		public String getMid_range() {
+			return mid_range;
+		}
+		public void setMid_range(String mid_range) {
+			this.mid_range = mid_range;
+		}
+		public String getSec_instruction() {
+			return sec_instruction;
+		}
+		public void setSec_instruction(String sec_instruction) {
+			this.sec_instruction = sec_instruction;
+		}
+		public String getDisplay_sec_name() {
+			return display_sec_name;
+		}
+		public void setDisplay_sec_name(String display_sec_name) {
+			this.display_sec_name = display_sec_name;
+		}
+		public String getSec_change_warning() {
+			return sec_change_warning;
+		}
+		public void setSec_change_warning(String sec_change_warning) {
+			this.sec_change_warning = sec_change_warning;
+		}
+		public int getMaxAllowedtoAttempt() {
+			return MaxAllowedtoAttempt;
+		}
+		public void setMaxAllowedtoAttempt(int maxAllowedtoAttempt) {
+			MaxAllowedtoAttempt = maxAllowedtoAttempt;
+		}
+		public String getIgnore_ques_id() {
+			return ignore_ques_id;
+		}
+		public void setIgnore_ques_id(String ignore_ques_id) {
+			this.ignore_ques_id = ignore_ques_id;
+		}
+		public int getCreatedBy() {
+			return createdBy;
+		}
+		public void setCreatedBy(int createdBy) {
+			this.createdBy = createdBy;
+		}
+		public Date getCreationDate() {
+			return creationDate;
+		}
+		public void setCreationDate(Date creationDate) {
+			this.creationDate = creationDate;
+		}
+		public int getLastUpdatedBy() {
+			return lastUpdatedBy;
+		}
+		public void setLastUpdatedBy(int lastUpdatedBy) {
+			this.lastUpdatedBy = lastUpdatedBy;
+		}
+		public Date getLastUpdatedOn() {
+			return lastUpdatedOn;
+		}
+		public void setLastUpdatedOn(Date lastUpdatedOn) {
+			this.lastUpdatedOn = lastUpdatedOn;
+		}
+		public String getBasket_json() {
+			return basket_json;
+		}
+		public void setBasket_json(String basket_json) {
+			this.basket_json = basket_json;
+		}
+		@Override
+		public String toString() {
+			return "te_section_que [sno=" + sno + ", section_name=" + section_name + ", stream=" + stream + ", topic="
+					+ topic + ", subtopic=" + subtopic + ", Domain_Name=" + Domain_Name + ", compCode=" + compCode
+					+ ", remark=" + remark + ", test_no=" + test_no + ", bank_type=" + bank_type + ", test_name="
+					+ test_name + ", set_no=" + set_no + ", total_time=" + total_time + ", farea=" + farea
+					+ ", totalques=" + totalques + ", totalrandom=" + totalrandom + ", ques=" + ques + ", test_pattern="
+					+ test_pattern + ", level=" + level + ", sec_wise_random=" + sec_wise_random + ", level1_totalQues="
+					+ level1_totalQues + ", level1_totalPool=" + level1_totalPool + ", level1_QuesId=" + level1_QuesId
+					+ ", level2_totalQues=" + level2_totalQues + ", level2_totalPool=" + level2_totalPool
+					+ ", level2_QuesId=" + level2_QuesId + ", level3_totalQues=" + level3_totalQues
+					+ ", level3_totalPool=" + level3_totalPool + ", level3_QuesId=" + level3_QuesId
+					+ ", level4_totalQues=" + level4_totalQues + ", level4_totalPool=" + level4_totalPool
+					+ ", level4_QuesId=" + level4_QuesId + ", level5_totalQues=" + level5_totalQues
+					+ ", level5_totalPool=" + level5_totalPool + ", level5_QuesId=" + level5_QuesId + ", compre_group="
+					+ compre_group + ", passing_percentage=" + passing_percentage + ", high_range=" + high_range
+					+ ", mid_range=" + mid_range + ", sec_instruction=" + sec_instruction + ", display_sec_name="
+					+ display_sec_name + ", sec_change_warning=" + sec_change_warning + ", MaxAllowedtoAttempt="
+					+ MaxAllowedtoAttempt + ", ignore_ques_id=" + ignore_ques_id + ", createdBy=" + createdBy
+					+ ", creationDate=" + creationDate + ", lastUpdatedBy=" + lastUpdatedBy + ", lastUpdatedOn="
+					+ lastUpdatedOn + ", basket_json=" + basket_json + "]";
+		}
+		
+		
+}	
